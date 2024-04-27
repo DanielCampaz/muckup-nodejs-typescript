@@ -1,0 +1,10 @@
+node_modules
+
+.env
+
+dist
+
+files/*
+media
+
+mc.json

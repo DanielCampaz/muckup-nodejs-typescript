@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "CommonJS",
+    "baseUrl": ".",
+    "paths": {
+      "@app/*": ["src/*"]
+    },                                
+    "typeRoots": ["./node_modules/@types"],
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,    
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,    
+    "skipLibCheck": true
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}

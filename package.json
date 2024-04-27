@@ -1,0 +1,32 @@
+{
+  "name": "mcup-nodejs-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "npm install && npm run start",
+    "start": "npm run start:transpilate && npm run start:prod",
+    "start:dev": "ts-node-dev -r tsconfig-paths/register --respawn --ignore-watch node_modules ./src/root.ts",
+    "start:transpilate": "tsc && tsc-alias",
+    "start:prod": "node ./dist/root.js",
+    "start:test": "jest --detectOpenHandles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "29.5.12",
+    "@typescript-eslint/eslint-plugin": "7.7.1",
+    "@typescript-eslint/parser": "7.7.1",
+    "eslint": "8.57.0",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-n": "17.3.1",
+    "eslint-plugin-promise": "6.1.1",
+    "jest": "29.7.0",
+    "ts-jest": "29.1.2",
+    "ts-node-dev": "^2.0.0",
+    "tsc-alias": "1.8.8",
+    "tsconfig-paths": "4.2.0",
+    "typescript": "5.4.5"
+  }
+}
